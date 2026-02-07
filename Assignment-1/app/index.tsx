@@ -22,6 +22,7 @@ export default function App() {
       </View>
 
       <ScrollView>
+        {/* Tweet 1 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -36,12 +37,35 @@ export default function App() {
               Hey check out this cool road
             </Text>
             <Image
-              source={{ uri: 'https://picsum.photos/400/250' }}
+              source={require('../assets/images/road.png')}
               style={styles.tweetImage}
             />
+
+            {/* Actions */}
+            <View style={styles.actionsRow}>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>💬</Text>
+                <Text style={styles.actionCount}>12</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔁</Text>
+                <Text style={styles.actionCount}>4</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>❤️</Text>
+                <Text style={styles.actionCount}>98</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔖</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>📤</Text>
+              </View>
+            </View>
           </View>
         </View>
 
+        {/* Tweet 2 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -55,9 +79,31 @@ export default function App() {
             <Text style={styles.tweetText}>
               Meat Grinders should be commercialized more you know
             </Text>
+
+            <View style={styles.actionsRow}>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>💬</Text>
+                <Text style={styles.actionCount}>3</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔁</Text>
+                <Text style={styles.actionCount}>1</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>❤️</Text>
+                <Text style={styles.actionCount}>22</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔖</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>📤</Text>
+              </View>
+            </View>
           </View>
         </View>
 
+        {/* Tweet 3 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -71,9 +117,31 @@ export default function App() {
             <Text style={styles.tweetText}>
               I HATE BANANAS!
             </Text>
+
+            <View style={styles.actionsRow}>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>💬</Text>
+                <Text style={styles.actionCount}>7</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔁</Text>
+                <Text style={styles.actionCount}>2</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>❤️</Text>
+                <Text style={styles.actionCount}>5</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔖</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>📤</Text>
+              </View>
+            </View>
           </View>
         </View>
 
+        {/* Tweet 4 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -87,9 +155,31 @@ export default function App() {
             <Text style={styles.tweetText}>
               Hey I like to eat bananas.
             </Text>
+
+            <View style={styles.actionsRow}>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>💬</Text>
+                <Text style={styles.actionCount}>9</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔁</Text>
+                <Text style={styles.actionCount}>6</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>❤️</Text>
+                <Text style={styles.actionCount}>44</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔖</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>📤</Text>
+              </View>
+            </View>
           </View>
         </View>
 
+        {/* Tweet 5 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -103,6 +193,27 @@ export default function App() {
             <Text style={styles.tweetText}>
               Did you know dogs can't stand on two legs?
             </Text>
+
+            <View style={styles.actionsRow}>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>💬</Text>
+                <Text style={styles.actionCount}>18</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔁</Text>
+                <Text style={styles.actionCount}>11</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>❤️</Text>
+                <Text style={styles.actionCount}>101</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>🔖</Text>
+              </View>
+              <View style={styles.actionItem}>
+                <Text style={styles.actionIcon}>📤</Text>
+              </View>
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -178,6 +289,27 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 200,
     borderRadius: 15
+  },
+
+  /* Actions */
+  actionsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 12,
+    paddingRight: 20
+  },
+  actionItem: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  actionIcon: {
+    fontSize: 16,
+    color: '#657786'
+  },
+  actionCount: {
+    marginLeft: 4,
+    fontSize: 13,
+    color: '#657786'
   },
 
   bottomNav: {
