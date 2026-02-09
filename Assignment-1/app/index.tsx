@@ -111,7 +111,7 @@ export default function App() {
               <Text style={styles.action}>💬 4</Text>
               <Text style={styles.action}>🔁 3</Text>
               <Text style={styles.action}>❤️ 29</Text>
-              <Text style={styles.action}>📤 0</Text>
+              <Text style={styles.action}>📊 1.5K</Text>
             </View>
           </View>
         </View>
@@ -138,7 +138,7 @@ export default function App() {
               <Text style={styles.action}>💬 3</Text>
               <Text style={styles.action}>🔁 1</Text>
               <Text style={styles.action}>❤️ 29</Text>
-              <Text style={styles.action}>📤 2</Text>
+              <Text style={styles.action}>📊 5.8K</Text>
             </View>
           </View>
         </View>
