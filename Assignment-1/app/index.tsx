@@ -22,7 +22,6 @@ export default function App() {
       </View>
 
       <ScrollView>
-        {/* Tweet 1 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -41,7 +40,6 @@ export default function App() {
               style={styles.tweetImage}
             />
 
-            {/* Actions */}
             <View style={styles.actionsRow}>
               <View style={styles.actionItem}>
                 <Text style={styles.actionIcon}>💬</Text>
@@ -65,7 +63,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Tweet 2 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -103,7 +100,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Tweet 3 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -141,7 +137,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Tweet 4 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -179,7 +174,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Tweet 5 */}
         <View style={styles.tweet}>
           <Image
             source={require('../assets/images/default-pfp.png')}
@@ -291,7 +285,6 @@ const styles = StyleSheet.create({
     borderRadius: 15
   },
 
-  /* Actions */
   actionsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
